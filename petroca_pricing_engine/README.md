@@ -1,6 +1,6 @@
-# PETROCAF Pricing Engine (MVP v0.1)
+# PETROCAF Pricing Engine (MVP v0.2)
 
-Offline-first Windows desktop pricing application for EPC/Oil & Gas BOQ costing and governance.
+Offline-first Windows desktop application to manage tenders from pricing to execution tracking, risk, and price variance for EPC/Oil & Gas projects.
 
 ## Stack
 - Python 3.12
@@ -14,6 +14,12 @@ python -m venv .venv
 pip install -r requirements.txt
 python -m app.main
 ```
+
+## Main Capabilities
+- **Pricing**: Compute and save BOQ pricing transactions with detailed cost build-up.
+- **Execution Tracking**: Capture project progress, actual cost, and remaining forecast.
+- **Risk Register**: Add tender risks with probability/impact scoring.
+- **Price Variance**: Dashboard compares baseline tender value against forecast final cost.
 
 ## Architecture
 - `app/ui`: presentation layer
